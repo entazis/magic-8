@@ -99,6 +99,9 @@ function shakeBall() {
         
         // Re-enable button
         shakeBtn.disabled = false;
+        
+        // Track the shake
+        if (window.trackEvent) trackEvent('shake', answer.type);
     }, 700);
 }
 
